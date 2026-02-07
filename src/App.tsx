@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Graph from './components/Graph';
 import Sidebar from './components/Sidebar';
 import { Language, LayoutName, Stats } from './types';
@@ -7,7 +7,7 @@ import { Menu } from 'lucide-react';
 function App() {
   const [language, setLanguage] = useState<Language>('zh');
   const [layout, setLayout] = useState<LayoutName>('fcose');
-  const [stats, setStats] = useState<Stats | null>(null); // Kept for future use or passed to sidebar
+  const [stats] = useState<Stats | null>(null);
   const [totalNodes, setTotalNodes] = useState(0);
   const [avgConnections, setAvgConnections] = useState(0);
   const [resetTrigger, setResetTrigger] = useState(0);

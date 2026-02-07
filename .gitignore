@@ -1,12 +1,6 @@
-local/*
-*.log
-*.pyc
-.env
-.vscode
-.vercel
-data_raw/*
 node_modules/
 dist/
-coverage/
+local/*
 .DS_Store
-.idea/
+.env
+.env.local

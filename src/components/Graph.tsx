@@ -232,9 +232,9 @@ const Graph: React.FC<GraphProps> = ({
     if (name === "fcose") {
       extraOptions = {
         nodeSeparation: 150,
-        nodeRepulsion: (node: any) => 100000,
-        idealEdgeLength: (edge: any) => 80,
-        edgeElasticity: (edge: any) => 0.03,
+        nodeRepulsion: (_node: any) => 100000,
+        idealEdgeLength: (_edge: any) => 80,
+        edgeElasticity: (_edge: any) => 0.03,
         ready: () => {
           if (cy.$(".selectedNodeTemp").length > 0) {
             cy.$(".selectedNodeTemp").addClass("selectedNode");
@@ -260,7 +260,7 @@ const Graph: React.FC<GraphProps> = ({
     }
     if (name === "concentric") {
       extraOptions = {
-        levelWidth: (n: any) => 1,
+        levelWidth: (_n: any) => 1,
         concentric: function (node: any) {
           let d = node.degree();
           let n = 1;
@@ -295,7 +295,7 @@ const Graph: React.FC<GraphProps> = ({
     return cy.layout({ ...layoutOptions, ...extraOptions });
   }, [moveNodeTo, rotateCircles]);
 
-  const runLayout = useCallback((name: string, overwrite = false) => {
+  const runLayout = useCallback((name: string, _overwrite = false) => {
     const cy = cyRef.current;
     if (!cy) return;
 
@@ -562,8 +562,8 @@ const Graph: React.FC<GraphProps> = ({
             if (n.degree(false) === 0) n.remove();
         });
 
-        cy.edges().unpanify();
-        cy.edges().unselectify();
+        // cy.edges().unpanify();
+        // cy.edges().unselectify();
 
         updateStats();
         setDataLoaded(true);
