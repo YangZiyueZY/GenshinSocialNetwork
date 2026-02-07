@@ -5,6 +5,28 @@
 以游戏《原神》(Genshin Impact)中的人物为例制作的社交网络图。以人物为顶点，若人物A语音中有关于人物B的条目，添加A→B的边。\
 A social network graph of Genshin characters. Each node is a character and each edge from A to B is a voice line of character A about character B.
 
+#### React Refactor | React 重构版
+
+本项目已使用 React + TypeScript 重构。
+
+**Run Locally | 本地运行**
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+**Build | 构建**
+
+```bash
+npm run build
+```
+
+---
+
 #### 布局说明 | About layouts
 
 本项目使用[Cytoscape.js](https://js.cytoscape.org/)生成网络图。采用了以下布局。\

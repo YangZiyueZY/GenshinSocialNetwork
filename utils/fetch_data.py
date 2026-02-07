@@ -10,9 +10,9 @@ from prepare_data import download_data, prepare_data
 from notion_db import update_remote_table
 from download_images import download_images
 
-DATA_FILE = "data/char_data.json"
-DATA_FILE_MIN = "data/char_data_min.json"
-ALIAS_FILE = "data/alias.json"
+DATA_FILE = "public/data/char_data.json"
+DATA_FILE_MIN = "public/data/char_data_min.json"
+ALIAS_FILE = "public/data/alias.json"
 # %%
 
 

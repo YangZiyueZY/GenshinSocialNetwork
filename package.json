@@ -1,0 +1,40 @@
+{
+  "name": "genshin-social-network-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cytoscape": "^3.28.1",
+    "cytoscape-avsdf": "^1.0.0",
+    "cytoscape-fcose": "^2.2.0",
+    "cytoscape-popper": "^2.0.0",
+    "layout-base": "^2.0.1",
+    "cose-base": "^2.1.0",
+    "avsdf-base": "^1.0.0",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "seedrandom": "^3.0.5",
+    "tippy.js": "^6.3.7"
+  },
+  "devDependencies": {
+    "@types/cytoscape": "^3.19.16",
+    "@types/cytoscape-avsdf": "^1.0.1",
+    "@types/cytoscape-fcose": "^2.2.1",
+    "@types/cytoscape-popper": "^2.0.1",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@types/seedrandom": "^3.0.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}

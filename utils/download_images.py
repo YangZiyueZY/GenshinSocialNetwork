@@ -3,7 +3,7 @@ import os
 import requests
 
 
-def download_images(char_data_path="data/char_data.json", image_dir="data/image"):
+def download_images(char_data_path="public/data/char_data.json", image_dir="public/data/image"):
     char_data = json.load(open(char_data_path, encoding="utf-8"))
     os.makedirs(image_dir, exist_ok=True)
     for char in char_data:
