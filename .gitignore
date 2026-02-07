@@ -5,3 +5,8 @@ local/*
 .vscode
 .vercel
 data_raw/*
+node_modules/
+dist/
+coverage/
+.DS_Store
+.idea/
